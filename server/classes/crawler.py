@@ -6,6 +6,7 @@ import random
 from bs4 import BeautifulSoup
 import requests
 import nltk
+from server.classes.detector import PolicyDetector
 
 
 
@@ -21,6 +22,8 @@ class PolicyCrawler:
         self.depth = depth
 
         self.stemmer = nltk.stem.SnowballStemmer('english')
+
+        self.policy_classifier = PolicyDetector()
 
         self.policy_terms = [
             'act',
@@ -120,6 +123,10 @@ class PolicyCrawler:
                 return True
         return False
 
+    async def classify(self):
+        for found_policy_url, policy_page in self.policy_links.items():
+            classified_policy = self.policy_classifier.classify(policy_page.get("page_content"), found_policy_url, policy_page.get("link_text"))
+            print('Crawler Classified: ',found_policy_url, classified_policy)
 
     async def crawl(self):
         visited = set()
@@ -132,7 +139,7 @@ class PolicyCrawler:
                 self.repo_html,
                 self.depth
             )
-
+        await self.classify()
 
     async def _crawl_page(self, session, url, html, level):
         print(url)
@@ -186,4 +193,4 @@ crawler = PolicyCrawler("https://ssh.datastations.nl/", depth=2)
 
 asyncio.run(crawler.crawl())
 
-print([v.get("link_text") for l,v in crawler.policy_links.items()])
+#print([v.get("link_text") for l,v in crawler.policy_links.items()])
