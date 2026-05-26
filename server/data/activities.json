@@ -1,0 +1,2089 @@
+{
+ "accessing": {
+  "action": "access",
+  "references": [
+   "https://w3id.org/oac#Access",
+   "http://id.loc.gov/vocabulary/preservation/eventType/acc"
+  ]
+ },
+ "access": {
+  "action": "access",
+  "references": [
+   "https://w3id.org/oac#Access",
+   "http://id.loc.gov/vocabulary/preservation/eventType/acc"
+  ]
+ },
+ "accessioning": {
+  "action": "accession",
+  "references": []
+ },
+ "accession": {
+  "action": "accession",
+  "references": []
+ },
+ "accruing": {
+  "action": "accrue",
+  "references": []
+ },
+ "accrue": {
+  "action": "accrue",
+  "references": []
+ },
+ "accrual": {
+  "action": "accrue",
+  "references": []
+ },
+ "acquire": {
+  "action": "acquire",
+  "references": []
+ },
+ "acquisition": {
+  "action": "acquire",
+  "references": []
+ },
+ "acquiring": {
+  "action": "acquire",
+  "references": []
+ },
+ "adding": {
+  "action": "add",
+  "references": [
+   "https://w3id.org/ods/add"
+  ]
+ },
+ "add": {
+  "action": "add",
+  "references": [
+   "https://w3id.org/ods/add"
+  ]
+ },
+ "addition": {
+  "action": "add",
+  "references": [
+   "https://w3id.org/ods/add"
+  ]
+ },
+ "aggregation": {
+  "action": "aggregate",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/aggregate"
+  ]
+ },
+ "aggregating": {
+  "action": "aggregate",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/aggregate"
+  ]
+ },
+ "aggregate": {
+  "action": "aggregate",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/aggregate"
+  ]
+ },
+ "annotating": {
+  "action": "annotate",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/annotate"
+  ]
+ },
+ "annotation": {
+  "action": "annotate",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/annotate"
+  ]
+ },
+ "annotate": {
+  "action": "annotate",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/annotate"
+  ]
+ },
+ "anonymizing": {
+  "action": "anonymize",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/anonymize",
+   "http://www.w3.org/ns/odrl/2/acceptAnonymize"
+  ]
+ },
+ "anonymization": {
+  "action": "anonymize",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/anonymize",
+   "http://www.w3.org/ns/odrl/2/acceptAnonymize"
+  ]
+ },
+ "anonymisation": {
+  "action": "anonymize",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/anonymize",
+   "http://www.w3.org/ns/odrl/2/acceptAnonymize"
+  ]
+ },
+ "anonymize": {
+  "action": "anonymize",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/anonymize",
+   "http://www.w3.org/ns/odrl/2/acceptAnonymize"
+  ]
+ },
+ "appending": {
+  "action": "append",
+  "references": []
+ },
+ "append": {
+  "action": "append",
+  "references": []
+ },
+ "appraisal": {
+  "action": "appraise",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/app"
+  ]
+ },
+ "appraising": {
+  "action": "appraise",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/app"
+  ]
+ },
+ "appraise": {
+  "action": "appraise",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/app"
+  ]
+ },
+ "archiving": {
+  "action": "archive",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/archive"
+  ]
+ },
+ "archive": {
+  "action": "archive",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/archive"
+  ]
+ },
+ "attribution": {
+  "action": "attribute",
+  "references": [
+   "http://creativecommons.org/ns#Attribution"
+  ]
+ },
+ "attributing": {
+  "action": "attribute",
+  "references": [
+   "http://creativecommons.org/ns#Attribution"
+  ]
+ },
+ "attribute": {
+  "action": "attribute",
+  "references": [
+   "http://creativecommons.org/ns#Attribution"
+  ]
+ },
+ "auditing": {
+  "action": "audit",
+  "references": []
+ },
+ "audit": {
+  "action": "audit",
+  "references": []
+ },
+ "authenticating": {
+  "action": "authenticate",
+  "references": []
+ },
+ "authentication": {
+  "action": "authenticate",
+  "references": []
+ },
+ "authenticate": {
+  "action": "authenticate",
+  "references": []
+ },
+ "authorize": {
+  "action": "authorize",
+  "references": []
+ },
+ "authorizing": {
+  "action": "authorize",
+  "references": []
+ },
+ "right": {
+  "action": "authorize",
+  "references": []
+ },
+ "rights": {
+  "action": "authorize",
+  "references": []
+ },
+ "authority": {
+  "action": "authorize",
+  "references": []
+ },
+ "ethics": {
+  "action": "authorize",
+  "references": []
+ },
+ "authorization": {
+  "action": "authorize",
+  "references": []
+ },
+ "availability": {
+  "action": "avail",
+  "references": []
+ },
+ "availing": {
+  "action": "avail",
+  "references": []
+ },
+ "avail": {
+  "action": "avail",
+  "references": []
+ },
+ "behave": {
+  "action": "behave",
+  "references": []
+ },
+ "behaviour": {
+  "action": "behave",
+  "references": []
+ },
+ "behaving": {
+  "action": "behave",
+  "references": []
+ },
+ "capture": {
+  "action": "capture",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/cap"
+  ]
+ },
+ "capturing": {
+  "action": "capture",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/cap"
+  ]
+ },
+ "catalogue": {
+  "action": "catalogue",
+  "references": []
+ },
+ "cataloguing": {
+  "action": "catalogue",
+  "references": []
+ },
+ "changing": {
+  "action": "change",
+  "references": []
+ },
+ "change": {
+  "action": "change",
+  "references": []
+ },
+ "charging": {
+  "action": "charge",
+  "references": []
+ },
+ "charge": {
+  "action": "charge",
+  "references": []
+ },
+ "checking": {
+  "action": "check",
+  "references": []
+ },
+ "check": {
+  "action": "check",
+  "references": []
+ },
+ "cite": {
+  "action": "cite",
+  "references": []
+ },
+ "citation": {
+  "action": "cite",
+  "references": []
+ },
+ "citing": {
+  "action": "cite",
+  "references": []
+ },
+ "classification": {
+  "action": "classify",
+  "references": []
+ },
+ "classifying": {
+  "action": "classify",
+  "references": []
+ },
+ "classify": {
+  "action": "classify",
+  "references": []
+ },
+ "collaboration": {
+  "action": "collaborate",
+  "references": []
+ },
+ "collaborate": {
+  "action": "collaborate",
+  "references": []
+ },
+ "collaborating": {
+  "action": "collaborate",
+  "references": []
+ },
+ "collect": {
+  "action": "collect",
+  "references": []
+ },
+ "collection": {
+  "action": "collect",
+  "references": []
+ },
+ "collecting": {
+  "action": "collect",
+  "references": []
+ },
+ "commercializing": {
+  "action": "commercialize",
+  "references": []
+ },
+ "commercialization": {
+  "action": "commercialize",
+  "references": []
+ },
+ "commercialize": {
+  "action": "commercialize",
+  "references": []
+ },
+ "compensation": {
+  "action": "compensate",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/compensate"
+  ]
+ },
+ "compensate": {
+  "action": "compensate",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/compensate"
+  ]
+ },
+ "compensating": {
+  "action": "compensate",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/compensate"
+  ]
+ },
+ "compile": {
+  "action": "compile",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/cop"
+  ]
+ },
+ "compilation": {
+  "action": "compile",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/cop"
+  ]
+ },
+ "compiling": {
+  "action": "compile",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/cop"
+  ]
+ },
+ "comply": {
+  "action": "comply",
+  "references": []
+ },
+ "complying": {
+  "action": "comply",
+  "references": []
+ },
+ "compliance": {
+  "action": "comply",
+  "references": []
+ },
+ "compress": {
+  "action": "compress",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/com"
+  ]
+ },
+ "compression": {
+  "action": "compress",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/com"
+  ]
+ },
+ "compressing": {
+  "action": "compress",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/com"
+  ]
+ },
+ "conducting": {
+  "action": "conduct",
+  "references": []
+ },
+ "conduct": {
+  "action": "conduct",
+  "references": []
+ },
+ "consenting": {
+  "action": "consent",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/obtainConsent"
+  ]
+ },
+ "consent": {
+  "action": "consent",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/obtainConsent"
+  ]
+ },
+ "conserving": {
+  "action": "conserve",
+  "references": []
+ },
+ "conserve": {
+  "action": "conserve",
+  "references": []
+ },
+ "conservation": {
+  "action": "conserve",
+  "references": []
+ },
+ "continue": {
+  "action": "continue",
+  "references": []
+ },
+ "continuing": {
+  "action": "continue",
+  "references": []
+ },
+ "continuation": {
+  "action": "continue",
+  "references": []
+ },
+ "controling": {
+  "action": "control",
+  "references": []
+ },
+ "control": {
+  "action": "control",
+  "references": []
+ },
+ "copyrighting": {
+  "action": "copyright",
+  "references": []
+ },
+ "copyright": {
+  "action": "protect",
+  "references": []
+ },
+ "create": {
+  "action": "create",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/cre"
+  ]
+ },
+ "creation": {
+  "action": "create",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/cre"
+  ]
+ },
+ "creating": {
+  "action": "create",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/cre"
+  ]
+ },
+ "curator": {
+  "action": "curate",
+  "references": []
+ },
+ "curating": {
+  "action": "curate",
+  "references": []
+ },
+ "curate": {
+  "action": "curate",
+  "references": []
+ },
+ "curation": {
+  "action": "curate",
+  "references": []
+ },
+ "deaccess": {
+  "action": "deaccess",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/dea"
+  ]
+ },
+ "deaccessioning": {
+  "action": "deaccess",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/dea"
+  ]
+ },
+ "deaccession": {
+  "action": "deaccess",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/dea"
+  ]
+ },
+ "deaccessing": {
+  "action": "deaccess",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/dea"
+  ]
+ },
+ "decision": {
+  "action": "decide",
+  "references": []
+ },
+ "decide": {
+  "action": "decide",
+  "references": []
+ },
+ "deciding": {
+  "action": "decide",
+  "references": []
+ },
+ "decompression": {
+  "action": "decompress",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/dec"
+  ]
+ },
+ "decompress": {
+  "action": "decompress",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/dec"
+  ]
+ },
+ "decompressing": {
+  "action": "decompress",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/dec"
+  ]
+ },
+ "decrypting": {
+  "action": "decrypt",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/der"
+  ]
+ },
+ "decryption": {
+  "action": "decrypt",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/der"
+  ]
+ },
+ "decrypt": {
+  "action": "decrypt",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/der"
+  ]
+ },
+ "deleting": {
+  "action": "delete",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/delete",
+   "http://id.loc.gov/vocabulary/preservation/eventType/del"
+  ]
+ },
+ "deletion": {
+  "action": "delete",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/delete",
+   "http://id.loc.gov/vocabulary/preservation/eventType/del"
+  ]
+ },
+ "delete": {
+  "action": "delete",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/delete",
+   "http://id.loc.gov/vocabulary/preservation/eventType/del"
+  ]
+ },
+ "depositor": {
+  "action": "deposit",
+  "references": []
+ },
+ "deposition": {
+  "action": "deposit",
+  "references": []
+ },
+ "deposit": {
+  "action": "deposit",
+  "references": []
+ },
+ "depositing": {
+  "action": "deposit",
+  "references": []
+ },
+ "derive": {
+  "action": "derive",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/derive"
+  ]
+ },
+ "deriving": {
+  "action": "derive",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/derive"
+  ]
+ },
+ "derivation": {
+  "action": "derive",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/derive"
+  ]
+ },
+ "develop": {
+  "action": "develop",
+  "references": []
+ },
+ "developing": {
+  "action": "develop",
+  "references": []
+ },
+ "development": {
+  "action": "develop",
+  "references": []
+ },
+ "digitize": {
+  "action": "digitize",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/digitize"
+  ]
+ },
+ "digitizing": {
+  "action": "digitize",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/digitize"
+  ]
+ },
+ "digitization": {
+  "action": "digitize",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/digitize"
+  ]
+ },
+ "disclaim": {
+  "action": "disclaim",
+  "references": []
+ },
+ "disclaiming": {
+  "action": "disclaim",
+  "references": []
+ },
+ "display": {
+  "action": "display",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/display",
+   "http://id.loc.gov/vocabulary/preservation/eventType/dsp"
+  ]
+ },
+ "displaying": {
+  "action": "display",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/display",
+   "http://id.loc.gov/vocabulary/preservation/eventType/dsp"
+  ]
+ },
+ "disposal": {
+  "action": "dispose",
+  "references": []
+ },
+ "disposing": {
+  "action": "dispose",
+  "references": []
+ },
+ "dispose": {
+  "action": "dispose",
+  "references": []
+ },
+ "disseminate": {
+  "action": "disseminate",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/dis"
+  ]
+ },
+ "dissemination": {
+  "action": "disseminate",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/dis"
+  ]
+ },
+ "disseminating": {
+  "action": "disseminate",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/dis"
+  ]
+ },
+ "distributing": {
+  "action": "distribute",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/distribute"
+  ]
+ },
+ "distribute": {
+  "action": "distribute",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/distribute"
+  ]
+ },
+ "distribution": {
+  "action": "distribute",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/distribute"
+  ]
+ },
+ "dividing": {
+  "action": "divide",
+  "references": []
+ },
+ "division": {
+  "action": "divide",
+  "references": []
+ },
+ "divide": {
+  "action": "divide",
+  "references": []
+ },
+ "droping": {
+  "action": "drop",
+  "references": [
+   "https://w3id.org/ods/drop"
+  ]
+ },
+ "drop": {
+  "action": "drop",
+  "references": [
+   "https://w3id.org/ods/drop"
+  ]
+ },
+ "embargo": {
+  "action": "embargo",
+  "references": []
+ },
+ "moratorium": {
+  "action": "embargo",
+  "references": []
+ },
+ "embargoing": {
+  "action": "embargo",
+  "references": []
+ },
+ "encrypting": {
+  "action": "encrypt",
+  "references": [
+   "https://w3id.org/ods/encrypt",
+   "http://id.loc.gov/vocabulary/preservation/eventType/enc"
+  ]
+ },
+ "encrypt": {
+  "action": "encrypt",
+  "references": [
+   "https://w3id.org/ods/encrypt",
+   "http://id.loc.gov/vocabulary/preservation/eventType/enc"
+  ]
+ },
+ "encryption": {
+  "action": "encrypt",
+  "references": [
+   "https://w3id.org/ods/encrypt",
+   "http://id.loc.gov/vocabulary/preservation/eventType/enc"
+  ]
+ },
+ "evaluation": {
+  "action": "evaluate",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/acceptEvaluate"
+  ]
+ },
+ "evaluating": {
+  "action": "evaluate",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/acceptEvaluate"
+  ]
+ },
+ "evaluate": {
+  "action": "evaluate",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/acceptEvaluate"
+  ]
+ },
+ "execution": {
+  "action": "execute",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/execute",
+   "http://id.loc.gov/vocabulary/preservation/eventType/exe"
+  ]
+ },
+ "execute": {
+  "action": "execute",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/execute",
+   "http://id.loc.gov/vocabulary/preservation/eventType/exe"
+  ]
+ },
+ "executing": {
+  "action": "execute",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/execute",
+   "http://id.loc.gov/vocabulary/preservation/eventType/exe"
+  ]
+ },
+ "export": {
+  "action": "export",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/exp"
+  ]
+ },
+ "exporting": {
+  "action": "export",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/exp"
+  ]
+ },
+ "extract": {
+  "action": "extract",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/extract",
+   "http://id.loc.gov/vocabulary/preservation/eventType/ext"
+  ]
+ },
+ "extraction": {
+  "action": "extract",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/extract",
+   "http://id.loc.gov/vocabulary/preservation/eventType/ext"
+  ]
+ },
+ "extracting": {
+  "action": "extract",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/extract",
+   "http://id.loc.gov/vocabulary/preservation/eventType/ext"
+  ]
+ },
+ "gift": {
+  "action": "give",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/give"
+  ]
+ },
+ "giving": {
+  "action": "give",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/give"
+  ]
+ },
+ "give": {
+  "action": "give",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/give"
+  ]
+ },
+ "granting": {
+  "action": "grant",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/grantUse"
+  ]
+ },
+ "grant": {
+  "action": "grant",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/grantUse"
+  ]
+ },
+ "hashing": {
+  "action": "hash",
+  "references": [
+   "https://w3id.org/ods/hash"
+  ]
+ },
+ "hash": {
+  "action": "hash",
+  "references": [
+   "https://w3id.org/ods/hash"
+  ]
+ },
+ "identify": {
+  "action": "identify",
+  "references": []
+ },
+ "identification": {
+  "action": "identify",
+  "references": []
+ },
+ "identifying": {
+  "action": "identify",
+  "references": []
+ },
+ "doi": {
+  "action": "identify",
+  "references": []
+ },
+ "identifier": {
+  "action": "identify",
+  "references": []
+ },
+ "pid": {
+  "action": "identify",
+  "references": []
+ },
+ "include": {
+  "action": "include",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/include"
+  ]
+ },
+ "including": {
+  "action": "include",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/include"
+  ]
+ },
+ "inclusion": {
+  "action": "include",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/include"
+  ]
+ },
+ "indexing": {
+  "action": "index",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/index"
+  ]
+ },
+ "index": {
+  "action": "index",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/index"
+  ]
+ },
+ "informing": {
+  "action": "inform",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/inform"
+  ]
+ },
+ "inform": {
+  "action": "inform",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/inform"
+  ]
+ },
+ "information": {
+  "action": "manage",
+  "references": []
+ },
+ "ingest": {
+  "action": "ingest",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/ing"
+  ]
+ },
+ "ingestion": {
+  "action": "ingest",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/ing"
+  ]
+ },
+ "ingesting": {
+  "action": "ingest",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/ing"
+  ]
+ },
+ "installing": {
+  "action": "install",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/install"
+  ]
+ },
+ "install": {
+  "action": "install",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/install"
+  ]
+ },
+ "installation": {
+  "action": "install",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/install"
+  ]
+ },
+ "interpret": {
+  "action": "interpret",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/int"
+  ]
+ },
+ "interpreting": {
+  "action": "interpret",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/int"
+  ]
+ },
+ "interpretation": {
+  "action": "interpret",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/int"
+  ]
+ },
+ "leasing": {
+  "action": "lease",
+  "references": []
+ },
+ "lease": {
+  "action": "lease",
+  "references": []
+ },
+ "lending": {
+  "action": "lend",
+  "references": []
+ },
+ "lend": {
+  "action": "lend",
+  "references": []
+ },
+ "licensing": {
+  "action": "license",
+  "references": []
+ },
+ "license": {
+  "action": "license",
+  "references": []
+ },
+ "loaning": {
+  "action": "loan",
+  "references": []
+ },
+ "loan": {
+  "action": "loan",
+  "references": []
+ },
+ "loging": {
+  "action": "log",
+  "references": [
+   "https://w3id.org/ods/log"
+  ]
+ },
+ "log": {
+  "action": "log",
+  "references": [
+   "https://w3id.org/ods/log"
+  ]
+ },
+ "software": {
+  "action": "manage",
+  "references": []
+ },
+ "data": {
+  "action": "manage",
+  "references": []
+ },
+ "management": {
+  "action": "manage",
+  "references": []
+ },
+ "content": {
+  "action": "manage",
+  "references": []
+ },
+ "manage": {
+  "action": "manage",
+  "references": []
+ },
+ "managing": {
+  "action": "manage",
+  "references": []
+ },
+ "merge": {
+  "action": "merge",
+  "references": []
+ },
+ "merger": {
+  "action": "merge",
+  "references": []
+ },
+ "merging": {
+  "action": "merge",
+  "references": []
+ },
+ "migrate": {
+  "action": "migrate",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/mig"
+  ]
+ },
+ "migrating": {
+  "action": "migrate",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/mig"
+  ]
+ },
+ "migration": {
+  "action": "migrate",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/mig"
+  ]
+ },
+ "mitigation": {
+  "action": "mitigate",
+  "references": []
+ },
+ "mitigate": {
+  "action": "mitigate",
+  "references": []
+ },
+ "mitigating": {
+  "action": "mitigate",
+  "references": []
+ },
+ "modifying": {
+  "action": "modify",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/modify",
+   "http://id.loc.gov/vocabulary/preservation/eventType/mod"
+  ]
+ },
+ "modify": {
+  "action": "modify",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/modify",
+   "http://id.loc.gov/vocabulary/preservation/eventType/mod"
+  ]
+ },
+ "modification": {
+  "action": "modify",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/modify",
+   "http://id.loc.gov/vocabulary/preservation/eventType/mod"
+  ]
+ },
+ "moving": {
+  "action": "move",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/move"
+  ]
+ },
+ "movement": {
+  "action": "move",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/move"
+  ]
+ },
+ "move": {
+  "action": "move",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/move"
+  ]
+ },
+ "multiplying": {
+  "action": "multiply",
+  "references": [
+   "https://w3id.org/ods/multiply"
+  ]
+ },
+ "multiply": {
+  "action": "multiply",
+  "references": [
+   "https://w3id.org/ods/multiply"
+  ]
+ },
+ "multiplication": {
+  "action": "multiply",
+  "references": [
+   "https://w3id.org/ods/multiply"
+  ]
+ },
+ "normalize": {
+  "action": "normalize",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/nor"
+  ]
+ },
+ "normalization": {
+  "action": "normalize",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/nor"
+  ]
+ },
+ "normalizing": {
+  "action": "normalize",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/nor"
+  ]
+ },
+ "notifying": {
+  "action": "notify",
+  "references": [
+   "https://w3id.org/ods/notify",
+   "http://creativecommons.org/ns#Notice"
+  ]
+ },
+ "notification": {
+  "action": "notify",
+  "references": [
+   "https://w3id.org/ods/notify",
+   "http://creativecommons.org/ns#Notice"
+  ]
+ },
+ "notify": {
+  "action": "notify",
+  "references": [
+   "https://w3id.org/ods/notify",
+   "http://creativecommons.org/ns#Notice"
+  ]
+ },
+ "packaging": {
+  "action": "pack",
+  "references": []
+ },
+ "packing": {
+  "action": "pack",
+  "references": []
+ },
+ "pack": {
+  "action": "pack",
+  "references": []
+ },
+ "paying": {
+  "action": "pay",
+  "references": []
+ },
+ "pay": {
+  "action": "pay",
+  "references": []
+ },
+ "payment": {
+  "action": "pay",
+  "references": []
+ },
+ "playing": {
+  "action": "play",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/play"
+  ]
+ },
+ "play": {
+  "action": "play",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/play"
+  ]
+ },
+ "practicing": {
+  "action": "practice",
+  "references": []
+ },
+ "practice": {
+  "action": "practice",
+  "references": []
+ },
+ "practise": {
+  "action": "practise",
+  "references": []
+ },
+ "practising": {
+  "action": "practise",
+  "references": []
+ },
+ "preparation": {
+  "action": "prepare",
+  "references": []
+ },
+ "preparing": {
+  "action": "prepare",
+  "references": []
+ },
+ "prepare": {
+  "action": "prepare",
+  "references": []
+ },
+ "presenting": {
+  "action": "present",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/present"
+  ]
+ },
+ "present": {
+  "action": "present",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/present"
+  ]
+ },
+ "presentation": {
+  "action": "present",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/present"
+  ]
+ },
+ "preservation": {
+  "action": "preserve",
+  "references": []
+ },
+ "preserve": {
+  "action": "preserve",
+  "references": []
+ },
+ "preserving": {
+  "action": "preserve",
+  "references": []
+ },
+ "preview": {
+  "action": "preview",
+  "references": []
+ },
+ "previewing": {
+  "action": "preview",
+  "references": []
+ },
+ "printing": {
+  "action": "print",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/print",
+   "http://id.loc.gov/vocabulary/preservation/eventType/prt"
+  ]
+ },
+ "print": {
+  "action": "print",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/print",
+   "http://id.loc.gov/vocabulary/preservation/eventType/prt"
+  ]
+ },
+ "privacy": {
+  "action": "protect",
+  "references": []
+ },
+ "protect": {
+  "action": "protect",
+  "references": []
+ },
+ "intellectual": {
+  "action": "protect",
+  "references": []
+ },
+ "ipr": {
+  "action": "protect",
+  "references": []
+ },
+ "protecting": {
+  "action": "protect",
+  "references": []
+ },
+ "confidentiality": {
+  "action": "protect",
+  "references": []
+ },
+ "protection": {
+  "action": "protect",
+  "references": []
+ },
+ "process": {
+  "action": "process",
+  "references": [
+   "https://w3id.org/oac#Processing"
+  ]
+ },
+ "processing": {
+  "action": "process",
+  "references": [
+   "https://w3id.org/oac#Processing"
+  ]
+ },
+ "provision": {
+  "action": "provide",
+  "references": []
+ },
+ "providing": {
+  "action": "provide",
+  "references": []
+ },
+ "provide": {
+  "action": "provide",
+  "references": []
+ },
+ "publication": {
+  "action": "publish",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/acceptPublish"
+  ]
+ },
+ "publish": {
+  "action": "publish",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/acceptPublish"
+  ]
+ },
+ "publishing": {
+  "action": "publish",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/acceptPublish"
+  ]
+ },
+ "quarantining": {
+  "action": "quarantine",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/qua"
+  ]
+ },
+ "quarantine": {
+  "action": "quarantine",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/qua"
+  ]
+ },
+ "querying": {
+  "action": "query",
+  "references": [
+   "https://w3id.org/ods/query",
+   "http://www.w3.org/ns/odrl/2/acceptQuery"
+  ]
+ },
+ "query": {
+  "action": "query",
+  "references": [
+   "https://w3id.org/ods/query",
+   "http://www.w3.org/ns/odrl/2/acceptQuery"
+  ]
+ },
+ "reader": {
+  "action": "read",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/read"
+  ]
+ },
+ "reading": {
+  "action": "read",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/read"
+  ]
+ },
+ "read": {
+  "action": "read",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/read"
+  ]
+ },
+ "reappraise": {
+  "action": "reappraise",
+  "references": []
+ },
+ "reappraisal": {
+  "action": "reappraise",
+  "references": []
+ },
+ "reappraising": {
+  "action": "reappraise",
+  "references": []
+ },
+ "recovery": {
+  "action": "recover",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/rec"
+  ]
+ },
+ "recover": {
+  "action": "recover",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/rec"
+  ]
+ },
+ "recovering": {
+  "action": "recover",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/rec"
+  ]
+ },
+ "redact": {
+  "action": "redact",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/red"
+  ]
+ },
+ "redacting": {
+  "action": "redact",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/red"
+  ]
+ },
+ "redaction": {
+  "action": "redact",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/red"
+  ]
+ },
+ "redepositing": {
+  "action": "redeposit",
+  "references": []
+ },
+ "redeposit": {
+  "action": "redeposit",
+  "references": []
+ },
+ "redeposition": {
+  "action": "redeposit",
+  "references": []
+ },
+ "refresh": {
+  "action": "refresh",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/ref"
+  ]
+ },
+ "refreshing": {
+  "action": "refresh",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/ref"
+  ]
+ },
+ "refreshment": {
+  "action": "refresh",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/ref"
+  ]
+ },
+ "release": {
+  "action": "release",
+  "references": []
+ },
+ "releasing": {
+  "action": "release",
+  "references": []
+ },
+ "rendering": {
+  "action": "render",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/ren"
+  ]
+ },
+ "render": {
+  "action": "render",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/ren"
+  ]
+ },
+ "replacing": {
+  "action": "replace",
+  "references": [
+   "https://w3id.org/ods/replace"
+  ]
+ },
+ "replace": {
+  "action": "replace",
+  "references": [
+   "https://w3id.org/ods/replace"
+  ]
+ },
+ "replacement": {
+  "action": "replace",
+  "references": [
+   "https://w3id.org/ods/replace"
+  ]
+ },
+ "replication": {
+  "action": "replicate",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/rep"
+  ]
+ },
+ "replicating": {
+  "action": "replicate",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/rep"
+  ]
+ },
+ "replicate": {
+  "action": "replicate",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/rep"
+  ]
+ },
+ "reproduction": {
+  "action": "reproduce",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/reproduce",
+   "http://creativecommons.org/ns#Reproduction"
+  ]
+ },
+ "reproducing": {
+  "action": "reproduce",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/reproduce",
+   "http://creativecommons.org/ns#Reproduction"
+  ]
+ },
+ "reproduce": {
+  "action": "reproduce",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/reproduce",
+   "http://creativecommons.org/ns#Reproduction"
+  ]
+ },
+ "resilience": {
+  "action": "resile",
+  "references": []
+ },
+ "resiling": {
+  "action": "resile",
+  "references": []
+ },
+ "resile": {
+  "action": "resile",
+  "references": []
+ },
+ "retaining": {
+  "action": "retain",
+  "references": []
+ },
+ "retention": {
+  "action": "retain",
+  "references": []
+ },
+ "retain": {
+  "action": "retain",
+  "references": []
+ },
+ "reusing": {
+  "action": "reuse",
+  "references": []
+ },
+ "reuse": {
+  "action": "reuse",
+  "references": []
+ },
+ "reviewer": {
+  "action": "review",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/reviewPolicy"
+  ]
+ },
+ "review": {
+  "action": "review",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/reviewPolicy"
+  ]
+ },
+ "reviewing": {
+  "action": "review",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/reviewPolicy"
+  ]
+ },
+ "revise": {
+  "action": "revise",
+  "references": []
+ },
+ "revising": {
+  "action": "revise",
+  "references": []
+ },
+ "revision": {
+  "action": "revise",
+  "references": []
+ },
+ "secure": {
+  "action": "secure",
+  "references": []
+ },
+ "security": {
+  "action": "secure",
+  "references": []
+ },
+ "securing": {
+  "action": "secure",
+  "references": []
+ },
+ "selection": {
+  "action": "select",
+  "references": []
+ },
+ "select": {
+  "action": "select",
+  "references": []
+ },
+ "selecting": {
+  "action": "select",
+  "references": []
+ },
+ "customer": {
+  "action": "sell",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/sell"
+  ]
+ },
+ "selling": {
+  "action": "sell",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/sell"
+  ]
+ },
+ "sale": {
+  "action": "sell",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/sell"
+  ]
+ },
+ "sell": {
+  "action": "sell",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/sell"
+  ]
+ },
+ "serve": {
+  "action": "serve",
+  "references": []
+ },
+ "serving": {
+  "action": "serve",
+  "references": []
+ },
+ "service": {
+  "action": "serve",
+  "references": []
+ },
+ "share": {
+  "action": "share",
+  "references": [
+   "http://creativecommons.org/ns#Sharing"
+  ]
+ },
+ "sharing": {
+  "action": "share",
+  "references": [
+   "http://creativecommons.org/ns#Sharing"
+  ]
+ },
+ "shuffle": {
+  "action": "shuffle",
+  "references": [
+   "https://w3id.org/ods/shuffle"
+  ]
+ },
+ "shuffling": {
+  "action": "shuffle",
+  "references": [
+   "https://w3id.org/ods/shuffle"
+  ]
+ },
+ "spliting": {
+  "action": "split",
+  "references": []
+ },
+ "split": {
+  "action": "split",
+  "references": []
+ },
+ "storing": {
+  "action": "store",
+  "references": []
+ },
+ "store": {
+  "action": "store",
+  "references": []
+ },
+ "storage": {
+  "action": "store",
+  "references": []
+ },
+ "stream": {
+  "action": "stream",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/stream"
+  ]
+ },
+ "streaming": {
+  "action": "stream",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/stream"
+  ]
+ },
+ "submiting": {
+  "action": "submit",
+  "references": []
+ },
+ "submitter": {
+  "action": "submit",
+  "references": []
+ },
+ "submit": {
+  "action": "submit",
+  "references": []
+ },
+ "submission": {
+  "action": "submit",
+  "references": []
+ },
+ "sustaining": {
+  "action": "sustain",
+  "references": []
+ },
+ "sustainability": {
+  "action": "sustain",
+  "references": []
+ },
+ "sustain": {
+  "action": "sustain",
+  "references": []
+ },
+ "synchronization": {
+  "action": "synchronize",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/synchronize"
+  ]
+ },
+ "synchronizing": {
+  "action": "synchronize",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/synchronize"
+  ]
+ },
+ "synchronize": {
+  "action": "synchronize",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/synchronize"
+  ]
+ },
+ "take-down": {
+  "action": "take-down",
+  "references": []
+ },
+ "down taking": {
+  "action": "take-down",
+  "references": []
+ },
+ "takedown": {
+  "action": "take-down",
+  "references": []
+ },
+ "track": {
+  "action": "track",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/acceptTracking"
+  ]
+ },
+ "tracking": {
+  "action": "track",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/acceptTracking"
+  ]
+ },
+ "trainee": {
+  "action": "train",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/acceptTrain"
+  ]
+ },
+ "train": {
+  "action": "train",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/acceptTrain"
+  ]
+ },
+ "training": {
+  "action": "train",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/acceptTrain"
+  ]
+ },
+ "transfer": {
+  "action": "transfer",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/transfer",
+   "http://id.loc.gov/vocabulary/preservation/eventType/tra",
+   "http://www.w3.org/ns/odrl/2/acceptTransform"
+  ]
+ },
+ "transfering": {
+  "action": "transfer",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/transfer",
+   "http://id.loc.gov/vocabulary/preservation/eventType/tra",
+   "http://www.w3.org/ns/odrl/2/acceptTransform"
+  ]
+ },
+ "transforming": {
+  "action": "transform",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/transform"
+  ]
+ },
+ "transformation": {
+  "action": "transform",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/transform"
+  ]
+ },
+ "transform": {
+  "action": "transform",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/transform"
+  ]
+ },
+ "translate": {
+  "action": "translate",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/translate"
+  ]
+ },
+ "translation": {
+  "action": "translate",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/translate"
+  ]
+ },
+ "translating": {
+  "action": "translate",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/translate"
+  ]
+ },
+ "uninstall": {
+  "action": "uninstall",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/uninstall"
+  ]
+ },
+ "uninstalling": {
+  "action": "uninstall",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/uninstall"
+  ]
+ },
+ "uninstallation": {
+  "action": "uninstall",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/uninstall"
+  ]
+ },
+ "unpacking": {
+  "action": "unpack",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/unp"
+  ]
+ },
+ "unpack": {
+  "action": "unpack",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/unp"
+  ]
+ },
+ "unquarantining": {
+  "action": "unquarantine",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/unq"
+  ]
+ },
+ "unquarantine": {
+  "action": "unquarantine",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/unq"
+  ]
+ },
+ "using": {
+  "action": "use",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/use"
+  ]
+ },
+ "use": {
+  "action": "use",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/use"
+  ]
+ },
+ "user": {
+  "action": "use",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/use"
+  ]
+ },
+ "usage": {
+  "action": "use",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/use"
+  ]
+ },
+ "validate": {
+  "action": "validate",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/val"
+  ]
+ },
+ "validation": {
+  "action": "validate",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/val"
+  ]
+ },
+ "validating": {
+  "action": "validate",
+  "references": [
+   "http://id.loc.gov/vocabulary/preservation/eventType/val"
+  ]
+ },
+ "verification": {
+  "action": "verify",
+  "references": []
+ },
+ "verifying": {
+  "action": "verify",
+  "references": []
+ },
+ "verify": {
+  "action": "verify",
+  "references": []
+ },
+ "version": {
+  "action": "version",
+  "references": []
+ },
+ "versioning": {
+  "action": "version",
+  "references": []
+ },
+ "watermark": {
+  "action": "watermark",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/watermark"
+  ]
+ },
+ "watermarking": {
+  "action": "watermark",
+  "references": [
+   "http://www.w3.org/ns/odrl/2/watermark"
+  ]
+ },
+ "weeding": {
+  "action": "weed",
+  "references": []
+ },
+ "weed": {
+  "action": "weed",
+  "references": []
+ },
+ "write": {
+  "action": "write",
+  "references": []
+ },
+ "author": {
+  "action": "write",
+  "references": []
+ },
+ "writing": {
+  "action": "write",
+  "references": []
+ }
+}
