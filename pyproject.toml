@@ -1,0 +1,39 @@
+[project]
+authors = [
+  {name = "Robert Huber", email = "rhuber@muni-bremen.de"},
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering :: Information Analysis"
+]
+dependencies = [
+    "connexion[uvicorn,swagger-ui]~=3.3.0",
+    "beautifulsoup4~=4.12",
+    "aiohttp>=3.13.3",
+    "beautifulsoup4>=4.14.3",
+    "nltk>=3.9.3",
+    "readability-lxml>=0.8.4.1",
+    "requests>=2.32.5",
+    "spacy>=3.8.11",
+    "en-core-web-md @ https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.8.0/en_core_web_md-3.8.0-py3-none-any.whl",
+    "lxml>=6.0.2"
+]
+
+description = "Policy Detection and Classification Service"
+keywords = [
+    "OpenAPI",
+    "FAIR",
+    "Research Data",
+    "Policies",
+    "Named Entity Recognition",
+    "EOSC EDEN"
+]
+license = "MIT"
+name = "pcs"
+readme = "README.md"
+requires-python = "~=3.13"  # at the moment only Python 3.13 is supported
+version = "0.0.1"
