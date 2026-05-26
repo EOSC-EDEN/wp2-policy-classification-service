@@ -1,0 +1,66 @@
+openapi: 3.0.3
+
+info:
+  title: Policy Detection and Classification Service
+  description: Policy Detection and Classification Service
+  version: 0.0.1
+
+servers:
+  - url: http://localhost:1072/pcs/api/v1
+    description: Policy Classification Development Server
+
+paths:
+  /detect:
+    post:
+      tags:
+        - policy
+      description: Detect policy related terms within a given text or web page
+      operationId: detect_policy
+
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              oneOf:
+                - $ref: '#/components/schemas/DetectByUrl'
+                - $ref: '#/components/schemas/DetectByText'
+
+            example:
+              url: https://example.com
+
+      responses:
+        '200':
+          description: successful policy detection operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PolicyTerms'
+
+        '404':
+          description: Object (URL) not found
+      x-openapi-router-controller: server.controllers.policy_detector
+
+components:
+  schemas:
+
+    DetectByUrl:
+      type: object
+      required: [url]
+      additionalProperties: false
+      properties:
+        url:
+          type: string
+          format: uri
+
+    DetectByText:
+      type: object
+      required: [text]
+      additionalProperties: false
+      properties:
+        text:
+          type: string
+
+    PolicyTerms:
+      type: object
+      description: Result of policy detection and classification
