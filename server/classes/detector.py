@@ -59,7 +59,6 @@ class PolicyDetector:
         return org_list
 
     def _set_actions(self):
-        actions = {}
         par_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         act_path = os.path.join(par_path, "data", "activities.json")
         with open(act_path, encoding="utf-8") as f:
@@ -83,13 +82,11 @@ class PolicyDetector:
         policy_ents = {}
         for ent in nlp_doc.ents:
             if ent.label_=='POLICY':
-                #print(ent.conjuncts, list(ent.rights), list(ent.noun_chunks), ent.ent_id_)
                 if ent.text.lower() not in policy_ents:
                     policy_ents[ent.text.lower()] = 1
                 else:
                     policy_ents[ent.text.lower()] += 1
         policy_ents = {k: v for k, v in sorted(policy_ents.items(), key=lambda item: item[1],reverse=True)}
-        #print(policy_ents)
 
         result = {"other": {"found":[], "count":0}}
         for policy_name, policy_count in policy_ents.items():

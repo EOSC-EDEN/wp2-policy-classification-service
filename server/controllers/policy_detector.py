@@ -26,7 +26,6 @@ def detect_policy(body):
     if not text:
         return {"error": "Either url or text must be provided"}, 400
 
-    # --- YOUR EXISTING LOGIC ---
     p = current_app.detector
     classification = p.classify(text)
 
