@@ -1,9 +1,7 @@
 # server/controllers/policy_detector.py
 
 import requests
-
-from server.classes.detector import PolicyDetector  # oder wo deine Klasse liegt
-
+from flask import current_app
 
 def detect_policy(body):
     """
@@ -29,7 +27,7 @@ def detect_policy(body):
         return {"error": "Either url or text must be provided"}, 400
 
     # --- YOUR EXISTING LOGIC ---
-    p = PolicyDetector()
+    p = current_app.detector
     classification = p.classify(text)
 
     return classification

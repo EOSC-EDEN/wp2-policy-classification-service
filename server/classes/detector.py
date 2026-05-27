@@ -11,7 +11,6 @@ from readability import Document
 
 class PolicyDetector:
     def __init__(self):
-
         self.policy_actions = {}
         self._set_actions()
 
@@ -113,16 +112,3 @@ class PolicyDetector:
                 result["other"]["found"].append(policy_name)
                 result["other"]["count"] += policy_count
         return result
-
-        #print(doc_text)
-#url = "https://pangaea.de/about/privacypolicy.php"
-#url = "https://dans.knaw.nl/en/terms-conditions-arc/"
-#url= "https://www.nwo.nl/en/netherlands-code-of-conduct-for-research-integrity"
-#url = "https://dans.knaw.nl/en/reuse-data-manual/"
-#url = "https://dans.knaw.nl/en/preservationplan/"
-#res = requests.get(url)
-#text = res.text
-#p = PolicyDetector()
-#text = '<b>Terms and Conditions of Microbial Resource Accession and Discarding</b>'
-#classification = p.classify(text)
-#print(classification)
