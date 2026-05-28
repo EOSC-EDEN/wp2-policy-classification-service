@@ -6,6 +6,7 @@ import os
 
 import server.data.rules as rules
 from spacy.util import compile_infix_regex
+from spacy.language import Language
 
 from readability import Document
 
@@ -33,6 +34,20 @@ class PolicyDetector:
         # Apply tokenizer change
         self.nlp.tokenizer.infix_finditer = infix_re.finditer
 
+        BLACKLIST = ["computer code", "source code"]
+
+        @Language.component("remove_bad_policy_matches")
+        def remove_bad_policy_matches(doc):
+            doc.ents = [
+                ent for ent in doc.ents
+                if not (
+                        ent.label_ == "POLICY"
+                        and any(bad in ent.text.lower() for bad in BLACKLIST)
+                )
+            ]
+
+            return doc
+
         org_ruler = self.nlp.add_pipe("entity_ruler", before='ner', config={"overwrite_ents": True, "validate": True},
                                       name="org_ruler")
         org_acronym_ruler = self.nlp.add_pipe("entity_ruler", before='ner',
@@ -41,6 +56,8 @@ class PolicyDetector:
         policy_ruler = self.nlp.add_pipe("entity_ruler", before='ner',
                                          config={"overwrite_ents": False, "validate": True},
                                          name="policy_ruler")
+        self.nlp.add_pipe("remove_bad_policy_matches", after="policy_ruler")
+
         org_list = self._load_org_names()
         org_patterns = [{"label": "ORG", "pattern": term_to_pattern(org)} for org in org_list]
         rules.org_patterns.extend(org_patterns)
@@ -108,4 +125,16 @@ class PolicyDetector:
             if not action:
                 result["other"]["found"].append(policy_name)
                 result["other"]["count"] += policy_count
+        if result:
+            sorted_list = [
+                {"action": k, **v}
+                for k, v in sorted(
+                    ((k, v) for k, v in result.items() if k != "other"),
+                    key=lambda x: (-x[1]["count"], x[0])
+                )
+            ]
+
+            if "other" in result:
+                sorted_list.append({"action": "other", **result["other"]})
+            result = sorted_list
         return result
