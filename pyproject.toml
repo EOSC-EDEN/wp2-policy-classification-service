@@ -35,7 +35,8 @@ keywords = [
 license = { text = "MIT" }
 name = "pcs"
 readme = "README.md"
-[tool.setuptools.package-data]
-server = ["data/*.json"]
 requires-python = "~=3.13"  # at the moment only Python 3.13 is supported
 version = "0.0.1"
+
+[tool.setuptools.package-data]
+server = ["data/*.json"]
