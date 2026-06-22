@@ -1,6 +1,6 @@
 [project]
 authors = [
-  {name = "Robert Huber", email = "rhuber@muni-bremen.de"},
+  {name = "Robert Huber", email = "rhuber@uni-bremen.de"},
 ]
 classifiers = [
   "Development Status :: 3 - Alpha",
@@ -32,7 +32,7 @@ keywords = [
     "Named Entity Recognition",
     "EOSC EDEN"
 ]
-license = "MIT"
+license = { text = "MIT" }
 name = "pcs"
 readme = "README.md"
 requires-python = "~=3.13"  # at the moment only Python 3.13 is supported
