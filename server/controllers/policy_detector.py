@@ -2,6 +2,8 @@
 
 import requests
 from flask import current_app
+from io import BytesIO
+from pdfminer.high_level import extract_text
 
 def detect_policy(body):
     """
@@ -19,7 +21,15 @@ def detect_policy(body):
         try:
             res = requests.get(url, timeout=10)
             res.raise_for_status()
-            text = res.text
+            content_type = res.headers.get("Content-Type")
+            if 'html' in content_type:
+                text = res.text
+            elif 'pdf' in content_type:
+                pdf_bytes = res.content
+                text = extract_text(BytesIO(pdf_bytes))
+            else:
+                return {"error": f"Unsupported content type: {str(content_type)}"}, 400
+
         except requests.RequestException as e:
             return {"error": f"Failed to fetch URL: {str(e)}"}, 400
 
