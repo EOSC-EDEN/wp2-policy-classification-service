@@ -4,6 +4,7 @@ import requests
 from flask import current_app
 from io import BytesIO
 from pdfminer.high_level import extract_text
+from is_antibot import is_antibot
 
 def detect_policy(body):
     """
@@ -22,6 +23,13 @@ def detect_policy(body):
             res = requests.get(url, timeout=10)
             res.raise_for_status()
             content_type = res.headers.get("Content-Type")
+            antibot_result = is_antibot(
+                headers=res.headers,
+                body=res.text,
+                status_code=res.status_code,
+            )
+            if antibot_result.detected:
+                return {"error": f"Antibot software detected, could not access content : {str(content_type)}"}, 400
             if 'html' in content_type:
                 text = res.text
             elif 'pdf' in content_type:
@@ -38,5 +46,6 @@ def detect_policy(body):
 
     p = current_app.detector
     classification = p.classify(text)
+    result = {"input":url or str(text[:100])+"...","result": classification}
 
-    return classification
+    return result
