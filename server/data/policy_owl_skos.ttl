@@ -62,11 +62,18 @@ ptv:Organisation
 	
 # Policies
 
-ptv:OrganisationalPolicy
-	a owl:Class, skos:Concept ;
+ptv:Policy
+a owl:Class, skos:Concept ;
 	rdfs:subClassOf
 		dct:Policy,
 		odrl:Policy ;
+	skos:prefLabel "Policy"@en;
+	rdfs:label "Policy"@en.
+
+ptv:OrganisationalPolicy
+	a owl:Class, skos:Concept ;
+	rdfs:subClassOf
+		ptv:Policy ;
 	skos:prefLabel "Organisational Policy"@en;
 	skos:altLabel "Institutional Policy"@en;
 	rdfs:label "Organisational Policy"@en.
@@ -102,8 +109,7 @@ ptv:RepositoryPolicy
 ptv:DataPolicy
 	a owl:Class, skos:Concept ;
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 	skos:prefLabel "Data Policy"@en;
 	rdfs:label "Data Policy"@en.
 
@@ -124,8 +130,7 @@ ptv:ResearchDataPolicy
 ptv:ServicePolicy
 	a owl:Class, skos:Concept ;
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 	skos:prefLabel "Service Policy"@en;
 	rdfs:label "Service Policy"@en.
 
@@ -139,8 +144,7 @@ ptv:DataServicePolicy
 ptv:UsagePolicy
 	a owl:Class, skos:Concept ;
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 	[
 		a owl:Restriction ;
 		owl:onProperty odrl:target ;
@@ -179,8 +183,7 @@ ptv:ServiceUsagePolicy
 ptv:ReusePolicy
 	a owl:Class, skos:Concept ;
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 	skos:prefLabel "Reuse Policy"@en;
 	rdfs:label "Reuse Policy"@en.
 		
@@ -194,8 +197,7 @@ ptv:DataReusePolicy
 ptv:AccessPolicy
 	a owl:Class, skos:Concept ;
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 		skos:prefLabel "Access Policy"@en;
 		rdfs:label "Access Policy"@en.
 		
@@ -223,16 +225,14 @@ ptv:OpenAccessPolicy
 ptv:CollaborationPolicy
 	a owl:Class, skos:Concept ;
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 	skos:prefLabel "Collaboration Policy"@en;
 	rdfs:label "Collaboration Policy"@en.
 
 ptv:DepositionPolicy
 	a owl:Class, skos:Concept ;
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 	skos:prefLabel "Deposition Policy"@en;
 	rdfs:label "Deposition Policy"@en.
 		
@@ -246,8 +246,7 @@ ptv:RedepositionPolicy
 ptv:EthicsPolicy
 	a owl:Class, skos:Concept ;
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 	skos:prefLabel "Ethics Policy"@en;
 	rdfs:label "Ethics Policy"@en.
 
@@ -278,8 +277,7 @@ ptv:EthicsClearancePolicy
 ptv:QualityPolicy
 	a owl:Class, skos:Concept ;
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 	skos:prefLabel "Quality Policy"@en;
 	rdfs:label "Quality Policy"@en.
 
@@ -293,8 +291,7 @@ ptv:DataQualityPolicy
 ptv:AvailabilityPolicy
 	a owl:Class, skos:Concept ;
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 	skos:prefLabel "Availability Policy"@en;
 	rdfs:label "Availability Policy"@en.
 
@@ -308,10 +305,9 @@ ptv:DataAvailabilityPolicy
 ptv:ReleasePolicy
 	a owl:Class, skos:Concept ;
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
-		skos:prefLabel "Release Policy"@en;
-		rdfs:label "Release Policy"@en.
+		ptv:Policy ;
+	skos:prefLabel "Release Policy"@en;
+	rdfs:label "Release Policy"@en.
 
 ptv:DataReleasePolicy
 	a owl:Class, skos:Concept ;
@@ -323,8 +319,7 @@ ptv:DataReleasePolicy
 ptv:TransferPolicy
 	a owl:Class, skos:Concept ;
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 	skos:prefLabel "Transfer Policy"@en;
 	rdfs:label "Transfer Policy"@en.
 
@@ -344,15 +339,13 @@ ptv:MaterialTransferPolicy
 
 ptv:MigrationPolicy
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 	skos:prefLabel "Migration Policy"@en;
 	rdfs:label "Migration Policy"@en.
 
 ptv:CollectionPolicy
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 	skos:prefLabel "Collection Policy"@en;
 	rdfs:label "Collection Policy"@en.
 	
@@ -394,8 +387,7 @@ ptv:ReappraisalPolicy
 
 ptv:DisposalPolicy
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 	skos:prefLabel "Disposal Policy"@en;
 	rdfs:label "Disposal Policy"@en.
 	
@@ -407,8 +399,7 @@ ptv:DeaccessionPolicy
 
 ptv:ContentPolicy
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 	skos:prefLabel "Content Policy"@en;
 	rdfs:label "Content Policy"@en.
 	
@@ -420,24 +411,21 @@ ptv:ContentCreationPolicy
 		
 ptv:InteroperabilityPolicy
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 	skos:prefLabel "Interoperability Policy"@en;
 	rdfs:label "Interoperability Policy"@en.
 
 
 ptv:DigitizationPolicy
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 	skos:prefLabel "Digitization Policy"@en;
 	rdfs:label "Digitization Policy"@en;
 	skos:altLabel "Digitalisation Policy".
 
 ptv:PreservationPolicy
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 	skos:prefLabel "Preservation Policy"@en;
 	rdfs:label "Preservation Policy"@en.
 	
@@ -456,16 +444,14 @@ ptv:Digital Preservation Policy
 ptv:ConservationPolicy
 	a owl:Class, skos:Concept ;
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 	skos:prefLabel "Conservation Policy"@en ;
 	rdfs:label "Conservation Policy"@en .
 
 ptv:CitationPolicy
 	a owl:Class, skos:Concept ;
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 	skos:prefLabel "Citation Policy"@en ;
 	rdfs:label "Citation Policy"@en .
 	
@@ -479,8 +465,7 @@ ptv:DataCitationPolicy
 ptv:ResearchPolicy
 	a owl:Class, skos:Concept ;
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 	skos:prefLabel "Research Policy"@en ;
 	skos:altLabel "Science Policy"@en ;
 	rdfs:label "Research Policy"@en .
@@ -495,8 +480,7 @@ ptv:OpenSciencePolicy
 ptv:CurationPolicy
 	a owl:Class, skos:Concept ;
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 	skos:prefLabel "Curation Policy"@en ;
 	rdfs:label "Curation Policy"@en .
 	
@@ -524,8 +508,7 @@ ptv:ClassificationPolicy
 ptv:SecurityPolicy
 	a owl:Class, skos:Concept ;
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 	skos:prefLabel "Security Policy"@en ;
 	rdfs:label "Security Policy"@en .
 
@@ -539,8 +522,7 @@ ptv:DataSecurityPolicy
 ptv:ProtectionPolicy
 	a owl:Class, skos:Concept ;
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 	skos:prefLabel "Protection Policy"@en ;
 	rdfs:label "Protection Policy"@en .
 
@@ -582,8 +564,7 @@ ptv:AuthenticityPolicy
 ptv:DisclosurePolicy
 	a owl:Class, skos:Concept ;
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 	skos:prefLabel "Disclosure Policy"@en ;
 	rdfs:label "Disclosure Policy"@en .
 
@@ -597,8 +578,7 @@ ptv:DisclosureControlPolicy
 ptv:RightsManagementPolicy
 	a owl:Class, skos:Concept ;
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 	skos:prefLabel "Rights Management Policy"@en ;
 	rdfs:label "Rights Management Policy"@en .
 
@@ -627,8 +607,7 @@ ptv:LicensingPolicy
 ptv:RetentionPolicy
 	a owl:Class, skos:Concept ;
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 	skos:prefLabel "Retention Policy"@en ;
 	rdfs:label "Retention Policy"@en .
 
@@ -642,16 +621,14 @@ ptv:DataRetentionPolicy
 ptv:SubmissionPolicy
 	a owl:Class, skos:Concept ;
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 	skos:prefLabel "Submission Policy"@en ;
 	rdfs:label "Submission Policy"@en .
 
 ptv:SharingPolicy
 	a owl:Class, skos:Concept ;
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 	skos:prefLabel "Sharing Policy"@en ;
 	rdfs:label "Sharing Policy"@en .
 
@@ -665,8 +642,7 @@ ptv:DataSharingPolicy
 ptv:PersistentIdentifierPolicy
 	a owl:Class, skos:Concept ;
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 	skos:prefLabel "Persistent Identifier Policy"@en ;
 	rdfs:label "Persistent Identifier Policy"@en .
 
@@ -680,48 +656,42 @@ ptv:DOIPolicy
 ptv:VersioningPolicy
 	a owl:Class, skos:Concept ;
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 	skos:prefLabel "Versioning Policy"@en ;
 	rdfs:label "Versioning Policy"@en .
 
 ptv:SustainabilityPolicy
 	a owl:Class, skos:Concept ;
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 	skos:prefLabel "Sustainability Policy"@en ;
 	rdfs:label "Sustainability Policy"@en .
 
 ptv:ArtificialIntelligencePolicy
 	a owl:Class, skos:Concept ;
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 	skos:prefLabel "Artificial Intelligence Policy"@en ;
 	rdfs:label "Artificial Intelligence Policy"@en .
 
 ptv:ExhibitionPolicy
 	a owl:Class, skos:Concept ;
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 	skos:prefLabel "Exhibition Policy"@en ;
 	rdfs:label "Exhibition Policy"@en .
 
 ptv:LoanPolicy
 	a owl:Class, skos:Concept ;
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 	skos:prefLabel "Loan Policy"@en ;
 	rdfs:label "Loan Policy"@en .
 
 ptv:FormatPolicy
 	a owl:Class, skos:Concept ;
 	rdfs:subClassOf
-		dct:Policy,
-		odrl:Policy ;
+		ptv:Policy ;
 	skos:prefLabel "Format Policy"@en ;
 	skos:altLabel "File Format Policy"@en ;
 	rdfs:label "Format Policy"@en .
