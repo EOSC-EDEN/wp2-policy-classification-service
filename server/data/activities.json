@@ -984,7 +984,7 @@
   ]
  },
  "information": {
-  "action": "manage",
+  "action": "inform",
   "references": []
  },
  "ingest": {
@@ -1085,19 +1085,7 @@
    "https://w3id.org/ods/log"
   ]
  },
- "software": {
-  "action": "manage",
-  "references": []
- },
- "data": {
-  "action": "manage",
-  "references": []
- },
  "management": {
-  "action": "manage",
-  "references": []
- },
- "content": {
   "action": "manage",
   "references": []
  },
