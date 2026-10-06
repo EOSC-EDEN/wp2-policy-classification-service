@@ -39,7 +39,7 @@ license = { text = "MIT" }
 name = "eden-policy-classifier"
 readme = "README.md"
 requires-python = "~=3.13"  # at the moment only Python 3.13 is supported
-version = "0.0.1"
+version = "0.0.2"
 
 [tool.setuptools.package-data]
 server = ["data/*.json"]
