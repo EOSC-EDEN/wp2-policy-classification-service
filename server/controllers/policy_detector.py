@@ -20,7 +20,8 @@ def detect_policy(body):
 
     if url:
         try:
-            res = requests.get(url, timeout=10)
+            headers = {"User-Agent": "Mozilla/5.0 (compatible; EOSC EDEN Policy Service/0.1; +https://github.com/EOSC-EDEN/wp2-policy-classification-service)"}
+            res = requests.get(url, timeout=10, headers=headers)
             res.raise_for_status()
             content_type = res.headers.get("Content-Type")
             antibot_result = is_antibot(
