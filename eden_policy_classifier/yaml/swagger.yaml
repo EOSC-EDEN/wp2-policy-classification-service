@@ -39,7 +39,7 @@ paths:
 
         '404':
           description: Object (URL) not found
-      x-openapi-router-controller: server.controllers.policy_detector
+      x-openapi-router-controller: eden_policy_classifier.controllers.policy_detector
 
 components:
   schemas:

@@ -1,4 +1,4 @@
-# server/controllers/policy_detector.py
+# eden_policy_classifier/controllers/policy_detector.py
 
 import requests
 from flask import current_app

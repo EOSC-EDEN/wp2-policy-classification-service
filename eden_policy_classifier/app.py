@@ -1,6 +1,6 @@
 import os
 import connexion
-from server.classes.detector import PolicyDetector
+from eden_policy_classifier.classes.detector import PolicyDetector
 from flask import current_app
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))

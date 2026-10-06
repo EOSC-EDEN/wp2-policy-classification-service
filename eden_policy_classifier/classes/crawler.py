@@ -6,7 +6,7 @@ import random
 from bs4 import BeautifulSoup
 import requests
 import nltk
-from server.classes.detector import PolicyDetector
+from eden_policy_classifier.classes.detector import PolicyDetector
 
 
 

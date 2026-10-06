@@ -41,5 +41,9 @@ readme = "README.md"
 requires-python = "~=3.13"  # at the moment only Python 3.13 is supported
 version = "0.0.2"
 
+
+[tool.setuptools.packages.find]
+where = ["."]
+
 [tool.setuptools.package-data]
-server = ["data/*.json"]
+eden_policy_classifier = ["data/*.json"]
