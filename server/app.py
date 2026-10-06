@@ -9,7 +9,8 @@ yamlfile = os.path.join(BASE_DIR, "yaml", "swagger.yaml")
 
 def create_app():
     app = connexion.App(__name__, specification_dir=BASE_DIR)
-    app.add_api(yamlfile, arguments={'title': 'DeviceTagger'}, pythonic_params=True)
+    app.add_api(yamlfile, arguments={'title': 'Policy Classifier'}, pythonic_params=True)
+    app.app.json.sort_keys = False
     with app.app.app_context():
         current_app.detector = PolicyDetector()
     return app

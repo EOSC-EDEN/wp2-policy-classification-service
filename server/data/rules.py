@@ -1,32 +1,152 @@
+STOP_WORDS = {
+                'the', 'a', 'an', 'and', 'or', 'of', 'for', 'to',
+                'in', 'on', 'with', 'by', 'from'
+            }
+
 POLICY_SUFFIXES = [
-    'act',
-    'addendum',
-    'agreement',
-    'amendment',
-    'charter',
-    'code',
-    'condition',
-    'constitution',
-    'contract',
-    'declaration',
-    'directive',
-    'guide',
-    'guideline',
-    'licence',
-    'license',
-    'manual',
-    'note',
-    'notice',
-    'plan',
-    'policy',
-    'principle',
-    'regulation',
-    'rule',
-    'statement',
-    'statute',
-    'strategy',
-    'term'
+    'act', 'acts',
+    'addendum', 'addenda',
+    'agreement', 'agreements',
+    'amendment', 'amendments',
+    'charter', 'charters',
+    'code','codes',
+    'condition', 'conditions',
+    'constitution', 'constitutions',
+    'contract', 'contracts',
+    'declaration', 'declarations',
+    'directive', 'directives',
+    'guide', 'guides',
+    'guideline', 'guidelines',
+    'licence', 'licences',
+    'license','licenses',
+    'manual', 'manuals',
+    'note', 'notes',
+    'notice', 'notices',
+    'plan', 'plans',
+    'policy', 'policies',
+    'principle', 'principles',
+    'regulation', 'regulations',
+    'rule', 'rules',
+    'statement', 'statements',
+    'statute', 'statutes',
+    'strategy', 'strategies',
+    'term','terms'
 ]
+
+POLICY_TARGETS = [
+    # Information / Knowledge
+    "data",
+    "information",
+    "knowledge",
+    "content",
+    "document",
+    "documents",
+    "record",
+    "records",
+    "metadata",
+    "dataset",
+    "datasets",
+    "research",
+    "science",
+    "evidence",
+
+    # Digital / Technical
+    "software",
+    "hardware",
+    "system",
+    "systems",
+    "technology",
+    "technologies",
+    "platform",
+    "application",
+    "applications",
+    "database",
+    "databases",
+    "network",
+    "networks",
+    "service",
+    "services",
+    "infrastructure",
+
+    # Rights / Legal / Governance
+    "rights",
+    "right",
+    "license",
+    "licence",
+    "copyright",
+    "intellectual property",
+    "property",
+    "ownership",
+    "privacy",
+    "confidentiality",
+    "consent",
+    "permission",
+    "permissions",
+    "access",
+    "authorization",
+    "authority",
+    "compliance",
+    "governance",
+    "regulation",
+    "law",
+    "legal",
+
+    # Ethics / Responsible Research
+    "ethics",
+    "ethical",
+    "research ethics",
+    "integrity",
+    "responsibility",
+    "responsible research",
+    "risk",
+    "risks",
+    "harm",
+    "safety",
+    "security",
+
+    # People / Organisations
+    "person",
+    "people",
+    "individual",
+    "individuals",
+    "user",
+    "users",
+    "researcher",
+    "researchers",
+    "author",
+    "authors",
+    "participant",
+    "participants",
+    "subject",
+    "subjects",
+    "community",
+    "communities",
+    "organization",
+    "organisation",
+    "institution",
+    "institutions",
+
+    # Research / Scholarly
+    "publication",
+    "publications",
+    "article",
+    "articles",
+    "paper",
+    "papers",
+    "journal",
+    "journals",
+    "citation",
+    "citations",
+    "source",
+    "sources",
+    "repository",
+    "repositories",
+    "archive",
+    "archives"
+]
+
+NOT_A_POLICY =[
+    'computer code']
 
 ORG_SUFFIXES = [
     "office",
@@ -55,14 +175,11 @@ ORG_SUFFIXES = [
 
 policy_patterns = []
 
-suffix_lemma_rule = {"LEMMA": {"IN":POLICY_SUFFIXES, "IS_UPPER": False}}
-
-policy_suffix_regex = r'(?i)\b(' + r'|'.join([p  for p in POLICY_SUFFIXES if not p.endswith('y')]) + r')s?\b|' +\
-r'\b(' + r'|'.join([p[:-1]  for p in POLICY_SUFFIXES if p.endswith('y')]) + r')(y|ies)\b'
-
-suffix_regex_rule = {
-    "TEXT": {"REGEX": policy_suffix_regex}
+suffix_lower_rule =  {
+    "LOWER": {"IN": POLICY_SUFFIXES},
+    "POS": {"IN": ["NOUN", "PROPN"]}
 }
+
 
 uppercase_org_acronym = {
     "label": "ACR",
@@ -72,21 +189,18 @@ uppercase_org_acronym = {
 up_to_three_nouns_not_suffix = {
     "POS": {"IN": ["ADJ", "NOUN", "PROPN","CCONJ"]},
     "LOWER": {"NOT_IN": POLICY_SUFFIXES},
-    "OP": "{1,5}", # apple and banana and carot
-    "IS_UPPER": False
+    "OP": "{1,5}" # apple and banana and carot
 }
 
 up_to_three_nouns_not_suffix_optional = {
     "POS": {"IN": ["ADJ", "NOUN", "PROPN","CCONJ"]},
     "LOWER": {"NOT_IN": POLICY_SUFFIXES},
-    "OP": "{0,5}", # apple and banana and carot
-    "IS_UPPER": False
+    "OP": "{0,5}" # apple and banana and carot
 }
 
 end_with_noun_not_suffix = {
         "POS": {"IN": ["NOUN", "PROPN"]},  # CCONJ bewusst ausgeschlossen
-        "LOWER": {"NOT_IN": POLICY_SUFFIXES},
-        "IS_UPPER": False
+        "LOWER": {"NOT_IN": POLICY_SUFFIXES}
     }
 
 
@@ -97,9 +211,9 @@ policy_patterns = [
       "pattern":
           # e.g. guidelines and policy for data reuse
           [
-              suffix_regex_rule,
+                suffix_lower_rule,
                 {"LOWER": {"IN": ["and", "&"]}},
-              suffix_regex_rule,
+                suffix_lower_rule,
               {"LOWER": {"IN":["of","for","on","to","in"]}},
                {"LOWER": {"IN":["the"]},"OP": "?"},
             # Optional descriptive noun(s) or proper noun(s),
@@ -113,9 +227,9 @@ policy_patterns = [
       "pattern":
         # terms and conditions
           [
-              suffix_regex_rule,
+                suffix_lower_rule,
                 {"LOWER": {"IN": ["and", "&"]}},
-              suffix_regex_rule
+                suffix_lower_rule,
           ]
     },
     {
@@ -124,9 +238,9 @@ policy_patterns = [
         "pattern": [
             # data policy and rules
             {"POS": {"IN": ["ADJ", "NOUN", "PROPN"]}, "OP": "?","IS_UPPER": False},
-            suffix_regex_rule,
+            suffix_lower_rule,
             {"LOWER": {"IN": ["and", "&"]}},
-            suffix_regex_rule
+            suffix_lower_rule,
         ]
     },
     {
@@ -134,8 +248,7 @@ policy_patterns = [
         "id": "4_some_noun_adj_suffix",
         "pattern": [
             up_to_three_nouns_not_suffix_optional,
-            end_with_noun_not_suffix,
-            suffix_regex_rule
+            suffix_lower_rule
         ]
     },
     {
@@ -144,7 +257,7 @@ policy_patterns = [
         "pattern": [
             # e.g. general
             {"POS": "ADJ", "OP": "?"},
-            suffix_regex_rule,
+            suffix_lower_rule,
             # Optional 'of'
             {"LOWER": {"IN":["of","for","on","to","in"]}},
             # Optional descriptive noun(s) or proper noun(s)
@@ -156,13 +269,22 @@ policy_patterns = [
         "label": "POLICY",
         "id": "6_suffix_for_some_noun_adj",
         "pattern": [
-            suffix_regex_rule,   # Head-Noun
+            suffix_lower_rule,
             {"LOWER": {"IN":["of","for","on","to","in"]}},
-            {"LOWER": {"IN":["the"]},"OP": "?"},      # Optional Präposition (kann erweitert werden)
+            {"LOWER": {"IN":["the"]},"OP": "?"},      # Optional
             up_to_three_nouns_not_suffix_optional,
             end_with_noun_not_suffix
         ]
+    },
+    {
+        "label": "POLICY",
+        "id": "7_adj_suffix",
+        "pattern": [
+            {"POS": "ADJ"},
+            suffix_lower_rule,
+        ]
     }
+
 ]
 
 org_patterns = [
