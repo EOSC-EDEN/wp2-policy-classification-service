@@ -20,6 +20,7 @@ dependencies = [
     "requests>=2.32.5",
     "spacy>=3.8.11",
     "en-core-web-md @ https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.8.0/en_core_web_md-3.8.0-py3-none-any.whl",
+    "en-core-web-lg @ https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.8.0/en_core_web_lg-3.8.0-py3-none-any.whl",
     "lxml>=6.0.2",
     "pdfminer.six>=20260107",
     "rapidfuzz",
