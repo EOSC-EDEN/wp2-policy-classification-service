@@ -23,10 +23,13 @@ logging.basicConfig(
 class PolicyDetector:
     logger = logging.getLogger('PolicyDetector')
 
-    def __init__(self):
+    def __init__(self, nlp_model = None):
         self.logger.info(' ---- Initializing PolicyDetector ---- ')
         #self.nlp = spacy.load("en_core_web_md")
-        self.nlp = spacy.load("en_core_web_lg")
+        if nlp_model is None or not isinstance(nlp_model, Language):
+            self.nlp = spacy.load("en_core_web_lg")
+        else:
+            self.nlp = nlp_model
         self.policy_vocab_dict = {}
         self.policy_actions = {}
         self._set_actions()
